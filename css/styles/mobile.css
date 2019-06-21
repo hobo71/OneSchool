@@ -1,0 +1,64 @@
+html {
+  font-size: 14px; }
+
+#nav-bar .nav-container {
+  z-index: 1; }
+  #nav-bar .nav-container .btn.btn-primary {
+    display: none; }
+  #nav-bar .nav-container .links ul {
+    position: absolute;
+    top: -300px;
+    background: #FFFFFF;
+    width: 100vw;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: .5s top ease-out;
+    overflow: hidden;
+    border-bottom: #7971EA 4px solid; }
+    #nav-bar .nav-container .links ul li {
+      margin: 1rem; }
+      #nav-bar .nav-container .links ul li a {
+        font-size: 1.4rem; }
+  #nav-bar .nav-container .repsonsive-nav {
+    display: block;
+    width: 2rem;
+    height: 3px;
+    background: #000;
+    position: relative;
+    transition: .2s all ease-in-out; }
+    #nav-bar .nav-container .repsonsive-nav::before {
+      content: '';
+      width: 2rem;
+      height: 3px;
+      background: #000;
+      position: absolute;
+      top: -8px;
+      transition: inherit; }
+    #nav-bar .nav-container .repsonsive-nav::after {
+      content: '';
+      width: 2rem;
+      height: 3px;
+      background: #000;
+      position: absolute;
+      top: 8px;
+      transition: inherit; }
+  #nav-bar .nav-container input[type="checkbox"] {
+    display: block;
+    opacity: 0; }
+  #nav-bar .nav-container input[type="checkbox"]:checked ~ .links ul {
+    top: 100%; }
+  #nav-bar .nav-container input[type="checkbox"]:checked ~ .repsonsive-nav {
+    transform: rotate(35deg); }
+    #nav-bar .nav-container input[type="checkbox"]:checked ~ .repsonsive-nav::after {
+      top: 0;
+      transform: rotate(0deg); }
+    #nav-bar .nav-container input[type="checkbox"]:checked ~ .repsonsive-nav::before {
+      top: 0;
+      transform: rotate(-70deg); }
+
+header .header-container {
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  padding-bottom: 2rem; }

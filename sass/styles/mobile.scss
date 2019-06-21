@@ -1,0 +1,107 @@
+// Max-width 768px
+
+
+// colors
+$primary-color: #7971EA;
+$white-color: #FFFFFF;
+$grey-color: gray;
+$text-color: #000;
+
+html {
+    font-size: 14px;
+}
+
+#nav-bar {
+
+    .nav-container {
+        z-index: 1;
+
+        .btn.btn-primary {
+            display: none;
+        }
+
+        .links ul {
+            position: absolute;
+            top: -300px;
+            background: $white-color;
+            width: 100vw;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            transition: .5s top ease-out;
+            overflow: hidden;
+            border-bottom: $primary-color 4px solid;
+
+
+            li {
+                margin: 1rem;
+
+                a {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .repsonsive-nav {
+            display: block;
+            width: 2rem;
+            height: 3px;
+            background: $text-color;
+            position: relative;
+            transition: .2s all ease-in-out;
+
+            &::before {
+                content: '';
+                width: 2rem;
+                height: 3px;
+                background: $text-color;
+                position: absolute;
+                top: -8px;
+                transition: inherit;
+            }
+
+            &::after {
+                content: '';
+                width: 2rem;
+                height: 3px;
+                background: $text-color;
+                position: absolute;
+                top: 8px;
+                transition: inherit;
+            }
+        }
+
+        input[type="checkbox"] {
+            display: block;
+            opacity: 0;
+        }
+
+        input[type="checkbox"]:checked~.links ul {
+            top: 100%;
+        }
+
+        input[type="checkbox"]:checked~.repsonsive-nav {
+            transform: rotate(35deg);
+
+            &::after {
+                top: 0;
+                transform: rotate(0deg);
+            }
+
+            &::before {
+                top: 0;
+                transform: rotate(-70deg);
+            }
+        }
+
+    }
+}
+
+header {
+    .header-container {
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        padding-bottom: 2rem;
+    }
+}
