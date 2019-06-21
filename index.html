@@ -8,8 +8,8 @@
     <title>OneSchool</title>
 
     <!-- Custom css -->
-    <link rel="stylesheet" href="css/styles/main.css">
-    <link rel="stylesheet" href="css/styles/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
@@ -17,13 +17,15 @@
 </head>
 
 <body>
-    <nav id="nav-bar">
-        <div class="nav-container">
+    <nav class="nav-bar">
+        <div class="nav-bar__container">
             <input type="checkbox">
-            <div class="brand">
-                <h2>OneSchool</h2>
+            <div class="nav-bar__container-brand">
+                <a href="#">
+                    <h2>OneSchool</h2>
+                </a>
             </div>
-            <div class="links">
+            <div class="nav-bar__container-links">
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">Courses</a></li>
@@ -33,15 +35,15 @@
             </div>
             <a href="#" class="btn btn-primary">Contact us!</a>
             <!-- This is the hamburger menu! -->
-            <div class="repsonsive-nav"></div>
+            <div class="nav-bar__container-repsonsive-nav"></div>
         </div>
     </nav>
 
     <!-- Header -->
-    <header>
+    <header class="header">
         <div class="container">
-            <div class="header-container">
-                <div class="content">
+            <div class="header__container">
+                <div class="header__container-content">
                     <h1>Learn From The Expert</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet
                         natus
@@ -49,11 +51,11 @@
                         necessitatibus.</p>
                     <a href="#" class="btn btn-primary">Addmission now</a>
                 </div>
-                <div class="form">
+                <div class="header__container-form">
                     <h1>Sign Up</h1>
-                    <input type="text" placeholder="Email address">
+                    <input type="email" placeholder="Email address">
                     <input type="password" placeholder="Your password">
-                    <input type="text" placeholder="Re-type your password">
+                    <input type="password" placeholder="Re-type your password">
                     <div>
                         <a href="#" class="btn btn-primary upper-case">Sign up</a>
                     </div>
@@ -62,7 +64,6 @@
         </div>
     </header>
 
-    
 </body>
 
 </html>

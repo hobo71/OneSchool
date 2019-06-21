@@ -1,13 +1,21 @@
 {
   "name": "oneschool",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a template that I made with sass for the first time solo\r It is my first time making website with solo and some js\r for live preview: https://ramikw.github.io/OneSchool/",
   "main": "index.js",
   "scripts": {
     "sass-compiler": "node-sass -w sass/ -o css/ -w"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramikw/OneSchool.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ramikw/OneSchool/issues"
+  },
+  "homepage": "https://github.com/Ramikw/OneSchool#readme",
   "dependencies": {
     "node-sass": "^4.12.0"
   }

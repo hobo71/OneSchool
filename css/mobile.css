@@ -1,11 +1,11 @@
 html {
   font-size: 14px; }
 
-#nav-bar .nav-container {
+.nav-bar__container {
   z-index: 1; }
-  #nav-bar .nav-container .btn.btn-primary {
+  .nav-bar__container .btn.btn-primary {
     display: none; }
-  #nav-bar .nav-container .links ul {
+  .nav-bar__container-links ul {
     position: absolute;
     top: -300px;
     background: #FFFFFF;
@@ -17,18 +17,18 @@ html {
     transition: .5s top ease-out;
     overflow: hidden;
     border-bottom: #7971EA 4px solid; }
-    #nav-bar .nav-container .links ul li {
+    .nav-bar__container-links ul li {
       margin: 1rem; }
-      #nav-bar .nav-container .links ul li a {
+      .nav-bar__container-links ul li a {
         font-size: 1.4rem; }
-  #nav-bar .nav-container .repsonsive-nav {
+  .nav-bar__container-repsonsive-nav {
     display: block;
     width: 2rem;
     height: 3px;
     background: #000;
     position: relative;
     transition: .2s all ease-in-out; }
-    #nav-bar .nav-container .repsonsive-nav::before {
+    .nav-bar__container-repsonsive-nav::before {
       content: '';
       width: 2rem;
       height: 3px;
@@ -36,7 +36,7 @@ html {
       position: absolute;
       top: -8px;
       transition: inherit; }
-    #nav-bar .nav-container .repsonsive-nav::after {
+    .nav-bar__container-repsonsive-nav::after {
       content: '';
       width: 2rem;
       height: 3px;
@@ -44,21 +44,21 @@ html {
       position: absolute;
       top: 8px;
       transition: inherit; }
-  #nav-bar .nav-container input[type="checkbox"] {
+  .nav-bar__container input[type="checkbox"] {
     display: block;
     opacity: 0; }
-  #nav-bar .nav-container input[type="checkbox"]:checked ~ .links ul {
+  input[type="checkbox"]:checked ~ .nav-bar__container-links ul {
     top: 100%; }
-  #nav-bar .nav-container input[type="checkbox"]:checked ~ .repsonsive-nav {
+  input[type="checkbox"]:checked ~ .nav-bar__container-repsonsive-nav {
     transform: rotate(35deg); }
-    #nav-bar .nav-container input[type="checkbox"]:checked ~ .repsonsive-nav::after {
+    input[type="checkbox"]:checked ~ .nav-bar__container-repsonsive-nav::after {
       top: 0;
       transform: rotate(0deg); }
-    #nav-bar .nav-container input[type="checkbox"]:checked ~ .repsonsive-nav::before {
+    input[type="checkbox"]:checked ~ .nav-bar__container-repsonsive-nav::before {
       top: 0;
       transform: rotate(-70deg); }
 
-header .header-container {
-  min-height: 100vh;
+.header__container {
+  height: auto;
   grid-template-columns: 1fr;
-  padding-bottom: 2rem; }
+  margin-bottom: 1rem; }

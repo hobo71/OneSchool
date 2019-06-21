@@ -1,0 +1,72 @@
+// nav-bar
+.nav-bar {
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: $white-color;
+    width: 100vw;
+
+    // Inner items
+    &__container {
+        margin: 0 auto;
+        display: flex;
+        overflow: hidden;
+        justify-content: space-between;
+        align-items: center;
+
+        &-brand a {
+            font-weight: 700;
+            z-index: 1;
+            text-decoration: none;
+            color: $text-color;
+        }
+
+        &-links ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                margin: 0 1rem;
+
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+                    font-size: 1.1rem;
+                    padding: .3rem 0;
+                    transition: .8s all;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+
+                    &.active {
+                        border-bottom: 2px solid $primary-color;
+                    }
+
+                }
+            }
+
+        }
+
+        .btn.btn-primary {
+            padding: .8rem 1.2rem;
+            font-weight: 900;
+        }
+
+        // The burger menu
+        &-repsonsive-nav {
+            display: none;
+        }
+
+        input[type="checkbox"] {
+            position: absolute;
+            right: .9rem;
+            display: none;
+            height: 28px;
+            width: 30px;
+            z-index: 1;
+        }
+    }
+
+}
