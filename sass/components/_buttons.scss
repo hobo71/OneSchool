@@ -1,19 +1,30 @@
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+.btn {
     padding: 1rem 2rem;
     text-decoration: none;
     border: none;
     border-radius: 100px;
     display: inline-block;
+    cursor: pointer;
+    transition: .5s all;
 }
 
 .btn-primary {
     background: $primary-color;
     color: $white-color;
-    transition: .5s all;
 }
 
 .btn-primary:hover {
     background: darken($primary-color, 5%);
+}
+
+.btn-black {
+    background: rgba($text-color, .8);
+    color: $white-color;
+}
+
+.btn-black:hover {
+    opacity: .6;
 }

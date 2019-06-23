@@ -28,21 +28,36 @@ body {
   100% {
     transform: translateY(0); } }
 
+.u-center-text {
+  text-align: center; }
+
+.u-py-5 {
+  padding: 5rem 0; }
+
 .btn:link,
-.btn:visited {
+.btn:visited,
+.btn {
   padding: 1rem 2rem;
   text-decoration: none;
   border: none;
   border-radius: 100px;
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer;
+  transition: .5s all; }
 
 .btn-primary {
   background: #7971EA;
-  color: #FFFFFF;
-  transition: .5s all; }
+  color: #FFFFFF; }
 
 .btn-primary:hover {
   background: #645be7; }
+
+.btn-black {
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF; }
+
+.btn-black:hover {
+  opacity: .6; }
 
 .container {
   max-width: 1100px;
@@ -139,3 +154,42 @@ body {
       height: 28px;
       width: 30px;
       z-index: 1; }
+
+.testmonials {
+  background: linear-gradient(to right bottom, #7971EA, #4f45e3);
+  position: relative; }
+  .testmonials__items-buttons .btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 0; }
+    .testmonials__items-buttons .btn:nth-child(1) {
+      right: unset;
+      left: 0; }
+  .testmonials__items-item {
+    display: none; }
+    .testmonials__items-item img {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%; }
+    .testmonials__items-item h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      background-image: linear-gradient(to bottom, #FFFFFF, #e6e6e6);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .testmonials__items-item p {
+      color: #FFFFFF;
+      font-size: 1rem; }
+  .testmonials .fade {
+    animation-name: fade;
+    animation-duration: 1.3s;
+    animation-delay: .1s; }
+
+@keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }

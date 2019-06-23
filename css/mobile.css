@@ -62,3 +62,15 @@ html {
   height: auto;
   grid-template-columns: 1fr;
   margin-bottom: 1rem; }
+
+.testmonials__items-buttons .btn {
+  top: unset;
+  bottom: 10px;
+  transform: translateY(0);
+  transform: translateX(50%);
+  right: unset;
+  left: 50%; }
+  .testmonials__items-buttons .btn:nth-child(1) {
+    left: unset;
+    right: 50%;
+    transform: translateX(-50%); }

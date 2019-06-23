@@ -1,11 +1,6 @@
 // Max-width 768px
 
-
-// colors
-$primary-color: #7971EA;
-$white-color: #FFFFFF;
-$grey-color: gray;
-$text-color: #000;
+@import "utils/variables";
 
 html {
     font-size: 14px;
@@ -104,5 +99,27 @@ html {
         height: auto;
         grid-template-columns: 1fr;
         margin-bottom: 1rem;
+    }
+}
+
+// The slide show
+
+.testmonials {
+    &__items-buttons .btn {
+
+        top: unset;
+        bottom: 10px;
+        transform: translateY(0);
+        
+        transform: translateX(50%);
+        right: unset;
+        left: 50%;
+        
+        &:nth-child(1) {
+            left: unset;
+            right: 50%;
+            transform: translateX(-50%);
+        }
+
     }
 }
