@@ -1,3 +1,15 @@
+// Show more button
+var showBtn = document.querySelector(".show-more-btn");
+var showItems = document.getElementsByClassName("courses__items-item");
+
+showBtn.addEventListener('click', function() {
+    for (var i = 2; i < showItems.length; i++) {
+        showItems[i].style.display = 'block';
+    }
+
+    showBtn.style.display = 'none';
+});
+
 // For the slide show
 var slides, currentSlide;
 

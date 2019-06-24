@@ -1,0 +1,12 @@
+.courses::before {
+  content: '';
+  display: block;
+  height: 40%;
+  width: 100%;
+  background: linear-gradient(to right bottom, #5f27cd, #4b1fa2);
+  position: absolute;
+  top: 0;
+  z-index: -1; }
+
+.courses h1 {
+  color: #f7f7f7; }

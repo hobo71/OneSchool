@@ -1,0 +1,18 @@
+@import "utils/variables";
+
+.courses {
+    &::before {
+        content: '';
+        display: block;
+        height: 40%;
+        width: 100%;
+        background: $linear-primary;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+
+    h1 {
+        color: $white-color;
+    }
+}
