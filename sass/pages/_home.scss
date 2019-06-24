@@ -1,3 +1,74 @@
+.courses {
+
+    &__items {
+        margin-top: .5rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        &-item {
+            flex: 1 0 30%;
+            position: relative;
+            margin: 1rem;
+            border: 1px solid $primary-color;
+            overflow: hidden;
+            box-shadow: 8px 8px 8px rgba($text-color, .3);
+
+            &-price {
+                padding: .5rem;
+                display: inline-block;
+                position: absolute;
+                font-style: italic;
+                right: 0;
+            }
+
+
+            img {
+                width: 100%;
+            }
+
+            &-content {
+                padding: 1rem;
+
+                h2 {
+                    background-image: linear-gradient(to right bottom, $primary-color, darken($primary-color, 15%));
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    margin-bottom: 1rem;
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    word-break: break-all;
+                }
+
+            }
+
+            .buttons {
+                display: flex;
+
+                .btn {
+                    flex: 1;
+                    border-radius: 0;
+                    text-align: center;
+                    border-top: 1px solid $primary-color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    &:nth-child(2) {
+                        border-left: 1px solid $primary-color;
+                        flex: 2;
+
+                        &:hover {
+                            color: darken($primary-color, 10%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .testmonials {
     background: linear-gradient(to right bottom, $primary-color, darken($primary-color, 10%));
     position: relative;
@@ -46,7 +117,6 @@
     .fade {
         animation-name: fade;
         animation-duration: 1.3s;
-        animation-delay: .1s;
     }
 
     @keyframes fade {

@@ -31,8 +31,23 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-big-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.u-text-primary {
+  color: #7971EA; }
+
 .u-py-5 {
   padding: 5rem 0; }
+
+.u-py-3 {
+  padding: 3rem 0; }
+
+.u-bg-primary {
+  background: #7971EA;
+  color: #FFFFFF; }
 
 .btn:link,
 .btn:visited,
@@ -67,7 +82,7 @@ body {
 
 .header {
   width: 100vw;
-  background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url("../../img/hero_1.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url("../img/hero_1.jpg") no-repeat center center/cover;
   background-attachment: fixed; }
   .header__container {
     height: 94vh;
@@ -155,6 +170,51 @@ body {
       width: 30px;
       z-index: 1; }
 
+.courses__items {
+  margin-top: .5rem;
+  display: flex;
+  flex-wrap: wrap; }
+  .courses__items-item {
+    flex: 1 0 30%;
+    position: relative;
+    margin: 1rem;
+    border: 1px solid #7971EA;
+    overflow: hidden;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3); }
+    .courses__items-item-price {
+      padding: .5rem;
+      display: inline-block;
+      position: absolute;
+      font-style: italic;
+      right: 0; }
+    .courses__items-item img {
+      width: 100%; }
+    .courses__items-item-content {
+      padding: 1rem; }
+      .courses__items-item-content h2 {
+        background-image: linear-gradient(to right bottom, #7971EA, #3a2ee0);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 1rem;
+        font-size: 1.5rem; }
+      .courses__items-item-content p {
+        word-break: break-all; }
+    .courses__items-item .buttons {
+      display: flex; }
+      .courses__items-item .buttons .btn {
+        flex: 1;
+        border-radius: 0;
+        text-align: center;
+        border-top: 1px solid #7971EA;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .courses__items-item .buttons .btn:nth-child(2) {
+          border-left: 1px solid #7971EA;
+          flex: 2; }
+          .courses__items-item .buttons .btn:nth-child(2):hover {
+            color: #4f45e3; }
+
 .testmonials {
   background: linear-gradient(to right bottom, #7971EA, #4f45e3);
   position: relative; }
@@ -185,8 +245,7 @@ body {
       font-size: 1rem; }
   .testmonials .fade {
     animation-name: fade;
-    animation-duration: 1.3s;
-    animation-delay: .1s; }
+    animation-duration: 1.3s; }
 
 @keyframes fade {
   from {
